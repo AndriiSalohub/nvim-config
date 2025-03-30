@@ -15,7 +15,7 @@ return {
 					},
 					show_buffer_close_icons = false,
 					indicator = {
-						style = "none", -- This removes the indicator completely
+						style = "none",
 					},
 				},
 				highlights = {
