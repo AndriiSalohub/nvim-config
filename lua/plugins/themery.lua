@@ -10,5 +10,12 @@ return {
 			},
 			livePreview = true,
 		})
+
+		vim.api.nvim_set_keymap(
+			"n",
+			"<leader>ct",
+			":Themery<CR>",
+			{ noremap = true, silent = true, desc = "Change Colorscheme" }
+		)
 	end,
 }

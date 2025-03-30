@@ -7,7 +7,6 @@ return {
 	require("plugins.auto-pairs"),
 	require("plugins.codesnap"),
 	require("plugins.comment"),
-	require("plugins.huez"),
 	require("plugins.lazyclip"),
 	require("plugins.markdown"),
 	require("plugins.surround"),
