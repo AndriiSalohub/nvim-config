@@ -101,15 +101,15 @@ Additional productivity and editing tools:
 The configuration emphasizes a clean and functional UI:
 
 - **Alpha Dashboard**: Greeting screen on startup.
-  - ![Alpha Dashboard Screenshot](https://ibb.co/qFxgFbPT)
+  - ![Alpha Dashboard Screenshot](docs/images/alpha.jpeg)
 - **Bufferline**: Tabs at the top for buffer navigation.
-  - ![Bufferline Screenshot](https://ibb.co/gFHb3gnW)
+  - ![Bufferline Screenshot](docs/images/bufferline.png)
 - **Lualine**: Status line with mode, file info, and git status.
-  - ![Lualine Screenshot](https://ibb.co/gMmG6gb6)
+  - ![Lualine Screenshot](docs/images/lualine.png)
 - **Telescope**: Fuzzy finder popup for quick searches.
-  - ![Telescope Screenshot](https://ibb.co/V0c3ChHk)
+  - ![Telescope Screenshot](docs/images/telescope.jpeg)
 - **Which-Key**: On-demand keybinding guide.
-  - ![Which-Key Screenshot](https://ibb.co/Xk6w6ZB6)
+  - ![Which-Key Screenshot](docs/images/which-key.jpeg)
 
 ### Coding Enhancements
 
