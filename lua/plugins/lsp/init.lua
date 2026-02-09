@@ -4,5 +4,4 @@ return {
 	{ require("plugins.lsp.lsp-config") },
 	{ require("plugins.lsp.none-ls") },
 	{ require("plugins.lsp.nvim-cmp") },
-	{ require("plugins.lsp.ts-error-translator") },
 }

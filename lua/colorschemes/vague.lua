@@ -1,4 +1,4 @@
 return {
-	"shaunsingh/nord.nvim",
+	"vague2k/vague.nvim",
 	lazy = true,
 }

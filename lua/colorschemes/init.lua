@@ -1,3 +1,3 @@
 return {
-	{ require("colorschemes.nord") },
+	require("colorschemes.vague"),
 }

@@ -3,14 +3,13 @@ return {
 	event = { "BufReadPre", "BufNewFile" },
 	config = function()
 		local conform = require("conform")
-
 		conform.setup({
 			formatters_by_ft = {
+				-- Web
 				javascript = { "prettier" },
 				typescript = { "prettier" },
 				javascriptreact = { "prettier" },
 				typescriptreact = { "prettier" },
-				svelte = { "prettier" },
 				css = { "prettier" },
 				scss = { "prettier" },
 				html = { "prettier" },
@@ -18,9 +17,16 @@ return {
 				yaml = { "prettier" },
 				markdown = { "prettier" },
 				graphql = { "prettier" },
-				liquid = { "prettier" },
+				-- Backend
 				lua = { "stylua" },
 				python = { "isort", "black" },
+				go = { "goimports", "gofumpt" },
+				java = { "google-java-format" },
+			},
+			formatters = {
+				prettier = {
+					prepend_args = { "--single-quote", "--trailing-comma", "es5" },
+				},
 			},
 			format_on_save = {
 				lsp_fallback = true,
@@ -28,7 +34,6 @@ return {
 				timeout_ms = 1000,
 			},
 		})
-
 		vim.keymap.set({ "n", "v" }, "<leader>mp", function()
 			conform.format({
 				lsp_fallback = true,

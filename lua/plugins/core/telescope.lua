@@ -23,6 +23,17 @@ return {
 			local actions = require("telescope.actions")
 			require("telescope").setup({
 				defaults = {
+					layout_strategy = "horizontal",
+					layout_config = {
+						horizontal = {
+							preview_width = 0.6,
+							results_width = 0.4,
+							prompt_position = "top",
+						},
+						width = 0.95,
+						height = 0.85,
+						-- preview_cutoff = 120,
+					},
 					mappings = {
 						i = {
 							["<C-j>"] = actions.move_selection_next,
@@ -52,6 +63,10 @@ return {
 			vim.keymap.set("n", "<leader>fw", builtin.live_grep, { desc = "Search by Grep" })
 			vim.keymap.set("n", "<leader>fd", builtin.diagnostics, { desc = "Search Diagnostics" })
 			vim.keymap.set("n", "<leader>fr", builtin.oldfiles, { desc = 'Search Recent Files ("." for repeat)' })
+			vim.keymap.set("n", "<leader>sr", builtin.lsp_references, { desc = "Search References (LSP)" })
+			vim.keymap.set("n", "<leader>si", function()
+				require("telescope.builtin").grep_string({ search = vim.fn.expand("<cword>") })
+			end, { desc = "Search for word under cursor", noremap = true, silent = true })
 			vim.keymap.set(
 				"n",
 				"<leader>f/",
